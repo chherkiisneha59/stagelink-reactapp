@@ -10,14 +10,14 @@ function Navbar() {
       <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/explore">Explore Artists</Link>
-        <Link to="/become-artist">Become an Artist</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/signup" className="signup-btn">
-          Sign Up
-        </Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/dashboard">Dashboard</Link>
       </div>
     </nav>
   );
 }
 
 export default Navbar;
+
+
