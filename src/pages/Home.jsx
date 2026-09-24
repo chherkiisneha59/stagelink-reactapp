@@ -1,9 +1,12 @@
+import Hero from "../components/Hero";
+
 function Home() {
-    return (
-        <div>
-            <p>Find the perfect artist for your event.</p>
-        </div>
-    );
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
 
-export default Home;
+export default Home;
+
