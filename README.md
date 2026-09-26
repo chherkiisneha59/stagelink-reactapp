@@ -2,7 +2,20 @@
 
 > **Connecting Event Organizers with Extraordinary Performing Artists Worldwide.**
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fchherkiisneha59%2Fstagelink-reactapp)
+
 StageLink is a modern React web platform built for discovering, exploring, and booking live performing talent — including singers, DJs, dance troupes, and keynote speakers.
+
+---
+
+## 🌐 Live Deployment on Vercel
+
+StageLink is fully configured for 1-click deployment and automated continuous deployment on **Vercel**:
+
+- **Framework**: Vite + React
+- **Output Directory**: `dist`
+- **Routing Rules**: `vercel.json` SPA URL rewrites included
+- **Deployment URL**: Click the **Deploy with Vercel** button above or import `chherkiisneha59/stagelink-reactapp` on [Vercel](https://vercel.com/new).
 
 ---
 
@@ -19,9 +32,10 @@ StageLink is a modern React web platform built for discovering, exploring, and b
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React
+- **Frontend**: React 18
 - **Build Tool**: Vite
 - **Routing**: React Router DOM
+- **Deployment**: Vercel
 - **Styling**: Custom Vanilla CSS (Sleek Dark Theme)
 
 ---
