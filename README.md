@@ -1,16 +1,56 @@
-# React + Vite
+# 🎭 StageLink
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> **Connecting Event Organizers with Extraordinary Performing Artists Worldwide.**
 
-Currently, two official plugins are available:
+StageLink is a modern React web platform built for discovering, exploring, and booking live performing talent — including singers, DJs, dance troupes, and keynote speakers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎥 **Hero Video Showcase**: Dynamic live stage performance video background on the homepage.
+- 💃 **Category Discovery**: Browse artists by category (Singers, DJs, Dancers, Speakers) with instant filtering.
+- 🔍 **Search & Filter**: Real-time artist search by name and performance type.
+- 📋 **Artist Details**: Detailed profile showcases featuring pricing, location, ratings, and performance bios.
+- 📅 **Event Booking**: Direct booking request interface for private parties, weddings, and corporate events.
+- 🌟 **Become an Artist**: Dedicated artist onboarding portal for performers to register their profiles.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Tech Stack
+
+- **Frontend**: React
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
+- **Styling**: Custom Vanilla CSS (Sleek Dark Theme)
+
+---
+
+## 🚀 Quick Start
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/chherkiisneha59/stagelink-reactapp.git
+   cd stagelink-reactapp
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start dev server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
