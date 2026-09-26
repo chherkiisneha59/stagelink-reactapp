@@ -633,6 +633,80 @@ a {
   margin-bottom: 25px;
 }
 
+/* Become an Artist */
+
+.artist-join-page {
+  min-height: calc(100vh - 75px);
+  padding: 80px 20px;
+}
+
+.artist-join-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.artist-join-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.artist-join-header p {
+  color: #a5a5b2;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.artist-join-header h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
+.artist-join-header span {
+  color: #aaaab5;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.artist-join-form {
+  padding: 35px;
+  border: 1px solid #292932;
+  border-radius: 15px;
+  background: #15151c;
+}
+
+.artist-submit {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.artist-join-success {
+  padding: 50px 35px;
+  text-align: center;
+  border: 1px solid #292932;
+  border-radius: 15px;
+  background: #15151c;
+}
+
+.artist-join-success h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.artist-join-success p {
+  color: #aaaab5;
+  margin-bottom: 10px;
+}
+
+.artist-join-success button {
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
 
 
 

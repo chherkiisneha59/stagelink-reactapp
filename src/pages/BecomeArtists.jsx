@@ -26,9 +26,9 @@ function BecomeArtists() {
   }
 
   return (
-    <main className="auth-page">
-      <div className="auth-container">
-        <div className="auth-header">
+    <main className="artist-join-page">
+      <div className="artist-join-container">
+        <div className="artist-join-header">
           <p>JOIN STAGELINK</p>
 
           <h1>Become an Artist</h1>
@@ -39,19 +39,21 @@ function BecomeArtists() {
         </div>
 
         {submitted ? (
-          <div className="auth-success">
+          <div className="artist-join-success">
             <h2>Application Submitted!</h2>
 
             <p>
               Thank you for registering, {formData.name}. Our team will review your portfolio and verify your artist profile.
             </p>
 
-            <Link to="/explore" className="primary-btn">
-              Explore Platform
+            <Link to="/explore">
+              <button type="button" className="primary-btn">
+                Explore Platform
+              </button>
             </Link>
           </div>
         ) : (
-          <form className="auth-form" onSubmit={handleSubmit} autoComplete="off">
+          <form className="artist-join-form" onSubmit={handleSubmit} autoComplete="off">
             <div className="form-group">
               <label htmlFor="name">Full Name / Stage Name</label>
               <input
@@ -133,7 +135,7 @@ function BecomeArtists() {
               />
             </div>
 
-            <button type="submit" className="primary-btn auth-submit">
+            <button type="submit" className="primary-btn artist-submit">
               Submit Artist Profile
             </button>
           </form>
