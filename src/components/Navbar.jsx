@@ -11,13 +11,11 @@ function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/explore">Artists</Link>
         <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/signup">Sign Up</Link>
       </div>
     </nav>
   );
 }
 
 export default Navbar;
-
-
