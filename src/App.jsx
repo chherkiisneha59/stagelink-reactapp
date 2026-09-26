@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Explore from './pages/Explore'
 import ArtistDetails from './pages/ArtistsDetails'
 import Booking from './pages/Booking'
+import BecomeArtists from './pages/BecomeArtists'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import './App.css'
@@ -19,6 +20,8 @@ function App() {
         <Route path="/artist/:id" element={<ArtistDetails />} />
         <Route path="/artists/:id" element={<ArtistDetails />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/become-artist" element={<BecomeArtists />} />
+        <Route path="/become-artists" element={<BecomeArtists />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
