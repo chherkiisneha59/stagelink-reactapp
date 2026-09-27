@@ -55,13 +55,6 @@ a {
   color: white;
 }
 
-.nav-btn-signup {
-  background: white;
-  color: #111 !important;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: 600 !important;
-}
 
 /* Hero Section */
 .hero {
@@ -867,10 +860,6 @@ a {
     white-space: nowrap;
   }
 
-  .nav-btn-signup {
-    padding: 6px 12px;
-    font-size: 12px !important;
-  }
 
   .categories-grid {
     grid-template-columns: repeat(2, 1fr) !important;

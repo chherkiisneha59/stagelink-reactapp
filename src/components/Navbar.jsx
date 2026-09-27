@@ -12,7 +12,7 @@ function Navbar() {
         <Link to="/explore">Artists</Link>
         <Link to="/become-artist">Become an Artist</Link>
         <Link to="/login">Login</Link>
-        <Link to="/signup" className="nav-btn-signup">Sign Up</Link>
+        <Link to="/signup">Sign Up</Link>
       </div>
     </nav>
   );
