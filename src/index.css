@@ -179,8 +179,10 @@ a {
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .category-card {
@@ -744,79 +746,66 @@ a {
   cursor: pointer;
 }
 
-/* Footer Styles */
+/* Footer Styles - Concise & Compact */
 .footer {
-  background: #0d0d12;
+  background: #0b0b0f;
   border-top: 1px solid #22222b;
-  padding: 60px 7% 30px;
-  margin-top: 60px;
+  padding: 30px 5% 20px;
+  margin-top: 50px;
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 50px;
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .footer-logo {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: white;
   text-decoration: none;
-  display: inline-block;
-  margin-bottom: 15px;
 }
 
-.footer-tagline {
+.footer-brand p {
   color: #8c8c99;
-  font-size: 14px;
-  line-height: 1.6;
-  max-width: 340px;
-  margin-bottom: 20px;
-}
-
-.footer-cta-btn {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 14px;
-  padding: 10px 20px;
-}
-
-.footer-links-group h4 {
-  color: white;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.footer-links-group ul {
-  list-style: none;
-  padding: 0;
+  font-size: 13px;
   margin: 0;
 }
 
-.footer-links-group li {
-  margin-bottom: 12px;
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.footer-links-group a {
+.footer-nav a {
   color: #a5a5b2;
+  font-size: 13px;
   text-decoration: none;
-  font-size: 14px;
   transition: color 0.2s ease;
 }
 
-.footer-links-group a:hover {
+.footer-nav a:hover {
   color: white;
 }
 
-.footer-bottom {
-  border-top: 1px solid #1a1a24;
-  padding-top: 25px;
-  text-align: center;
+.footer-copy p {
   color: #6d6d7a;
-  font-size: 13px;
+  font-size: 12px;
+  margin: 0;
 }
+
 
 /* Media Queries */
 @media (max-width: 1024px) {
