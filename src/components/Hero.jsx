@@ -6,10 +6,11 @@ function Hero() {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
+      video.muted = true;
       const playPromise = video.play();
       if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // Playback deferred by browser
+        playPromise.catch((err) => {
+          console.log("Autoplay deferred:", err);
         });
       }
     }
@@ -18,7 +19,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-video-container">
-        {/* Real Live Event & Stage Performance Video */}
+        {/* Local MP4 Video Asset */}
         <video
           ref={videoRef}
           className="hero-video"
@@ -28,18 +29,7 @@ function Hero() {
           playsInline
           webkit-playsinline="true"
         >
-          <source
-            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-            type="video/mp4"
-          />
+          <source src="/hero-bg.mp4" type="video/mp4" />
         </video>
         <div className="hero-video-overlay" />
       </div>
