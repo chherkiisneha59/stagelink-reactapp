@@ -4,7 +4,7 @@ function Hero() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
 
-  // Animated Concert Stage Spotlights Effect
+  // Animated Concert & Corporate Event Stage Spotlights
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -92,7 +92,7 @@ function Hero() {
         {/* Stage Lighting Canvas Background */}
         <canvas ref={canvasRef} className="hero-canvas" />
 
-        {/* Live Video Stream */}
+        {/* Live Event & Performer Video Stream */}
         <video
           ref={videoRef}
           className="hero-video"
@@ -103,15 +103,15 @@ function Hero() {
           webkit-playsinline="true"
         >
           <source
+            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+            type="video/mp4"
+          />
+          <source
             src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
             type="video/mp4"
           />
         </video>
