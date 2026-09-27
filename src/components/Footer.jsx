@@ -11,13 +11,6 @@ function Footer() {
           <p>Connecting event organizers with extraordinary performing talent.</p>
         </div>
 
-        <div className="footer-nav">
-          <Link to="/">Home</Link>
-          <Link to="/explore">Artists</Link>
-          <Link to="/become-artist">Become an Artist</Link>
-          <Link to="/login">Sign In</Link>
-        </div>
-
         <div className="footer-copy">
           <p>&copy; {new Date().getFullYear()} StageLink. All rights reserved.</p>
         </div>
