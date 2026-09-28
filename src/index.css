@@ -691,6 +691,79 @@ a {
   transform: translateX(4px);
 }
 
+/* Contact Page */
+.contact-page {
+  min-height: calc(100vh - 70px);
+  padding: 60px 20px;
+}
+
+.contact-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header p {
+  color: #b8a0ff;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.contact-header h1 {
+  font-size: clamp(26px, 5vw, 44px);
+  margin-bottom: 12px;
+}
+
+.contact-header span {
+  color: #aaaab5;
+  font-size: 16px;
+}
+
+.contact-form {
+  padding: 35px;
+  border: 1px solid #292932;
+  border-radius: 15px;
+  background: #15151c;
+}
+
+.contact-submit {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.contact-success {
+  padding: 50px 35px;
+  text-align: center;
+  border: 1px solid #292932;
+  border-radius: 15px;
+  background: #15151c;
+}
+
+.contact-success h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-success p {
+  color: #aaaab5;
+  margin-bottom: 10px;
+}
+
+.contact-success button {
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
 /* Become an Artist */
 .artist-join-page {
   min-height: calc(100vh - 70px);

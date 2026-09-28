@@ -6,6 +6,7 @@ import Explore from './pages/Explore'
 import ArtistDetails from './pages/ArtistsDetails'
 import Booking from './pages/Booking'
 import BecomeArtists from './pages/BecomeArtists'
+import Contact from './pages/Contact'
 import './App.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/booking" element={<Booking />} />
         <Route path="/become-artist" element={<BecomeArtists />} />
         <Route path="/become-artists" element={<BecomeArtists />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
