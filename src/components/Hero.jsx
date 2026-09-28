@@ -1,10 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 function Hero() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -12,12 +10,9 @@ function Hero() {
       video.muted = true;
       const playPromise = video.play();
       if (playPromise !== undefined) {
-        playPromise
-          .then(() => setIsPlaying(true))
-          .catch((err) => {
-            console.log("Autoplay deferred:", err);
-            setIsPlaying(false);
-          });
+        playPromise.catch((err) => {
+          console.log("Autoplay deferred:", err);
+        });
       }
     }
   }, []);
@@ -106,24 +101,6 @@ function Hero() {
     };
   }, []);
 
-  const togglePlay = () => {
-    const video = videoRef.current;
-    if (!video) return;
-    if (isPlaying) {
-      video.pause();
-      setIsPlaying(false);
-    } else {
-      video.play().then(() => setIsPlaying(true));
-    }
-  };
-
-  const toggleMute = () => {
-    const video = videoRef.current;
-    if (!video) return;
-    video.muted = !video.muted;
-    setIsMuted(video.muted);
-  };
-
   return (
     <section className="hero">
       <div className="hero-video-container">
@@ -169,24 +146,6 @@ function Hero() {
           Discover talented singers, DJs, dancers, speakers and performers
           for weddings, parties, corporate events and more.
         </p>
-
-        {/* Dynamic Video & Audio Controls */}
-        <div className="hero-controls">
-          <button
-            onClick={togglePlay}
-            className="hero-control-btn"
-            title={isPlaying ? "Pause Video" : "Play Video"}
-          >
-            {isPlaying ? "⏸️ Pause BG Video" : "▶️ Play Event Video"}
-          </button>
-          <button
-            onClick={toggleMute}
-            className="hero-control-btn"
-            title={isMuted ? "Unmute Sound" : "Mute Sound"}
-          >
-            {isMuted ? "🔇 Muted" : "🔊 Sound On"}
-          </button>
-        </div>
       </div>
     </section>
   );
