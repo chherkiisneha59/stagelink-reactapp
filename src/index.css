@@ -605,89 +605,90 @@ a {
   margin-bottom: 8px;
 }
 
-/* Authentication Pages */
-.auth-page {
-  min-height: calc(100vh - 70px);
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.auth-container {
-  width: 100%;
-  max-width: 500px;
-}
-
-.auth-header {
+/* Become an Artist CTA Section */
+.become-artist-cta {
+  position: relative;
+  padding: 90px 7%;
   text-align: center;
-  margin-bottom: 40px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0f0f14 0%, #17141f 50%, #0f0f14 100%);
 }
 
-.auth-header p {
-  color: #a5a5b2;
+.cta-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(184, 160, 255, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  animation: ctaPulse 4s ease-in-out infinite;
+}
+
+@keyframes ctaPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+  50% { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.cta-tag {
   font-size: 13px;
   letter-spacing: 3px;
-  margin-bottom: 12px;
-}
-
-.auth-header h1 {
-  font-size: clamp(26px, 5vw, 40px);
-  margin-bottom: 12px;
-}
-
-.auth-header span {
-  color: #aaaab5;
-  line-height: 1.6;
-}
-
-.auth-form {
-  padding: 35px;
-  border: 1px solid #292932;
-  border-radius: 15px;
-  background: #15151c;
-}
-
-.auth-submit {
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  font-size: 15px;
-  margin-top: 5px;
-}
-
-.auth-footer-text {
-  text-align: center;
-  color: #9999a5;
-  margin-top: 25px;
-}
-
-.auth-footer-text a {
-  color: white;
+  color: #b8a0ff;
+  margin-bottom: 16px;
   font-weight: 600;
 }
 
-.form-error {
-  color: #ff7b7b;
-  font-size: 14px;
+.cta-content h2 {
+  font-size: clamp(26px, 5vw, 42px);
+  line-height: 1.2;
   margin-bottom: 18px;
+  background: linear-gradient(135deg, #ffffff 30%, #b8a0ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.auth-success {
-  padding: 45px 35px;
-  text-align: center;
-  border: 1px solid #292932;
-  border-radius: 15px;
-  background: #15151c;
-}
-
-.auth-success h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.auth-success p {
+.cta-description {
   color: #aaaab5;
-  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #b8a0ff, #8b6fff);
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 25px rgba(184, 160, 255, 0.25);
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 35px rgba(184, 160, 255, 0.4);
+}
+
+.cta-arrow {
+  font-size: 20px;
+  transition: transform 0.25s ease;
+}
+
+.cta-btn:hover .cta-arrow {
+  transform: translateX(4px);
 }
 
 /* Become an Artist */
@@ -911,9 +912,17 @@ a {
   .explore-page,
   .booking-page,
   .artist-join-page,
-  .auth-page,
   .artist-details-page {
     padding: 35px 14px;
+  }
+
+  .become-artist-cta {
+    padding: 50px 16px;
+  }
+
+  .cta-glow {
+    width: 300px;
+    height: 300px;
   }
 
   .artist-profile {
@@ -928,7 +937,6 @@ a {
   }
 
   .booking-form,
-  .auth-form,
   .artist-join-form {
     padding: 22px 16px;
   }

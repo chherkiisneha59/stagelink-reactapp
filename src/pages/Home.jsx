@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import CategoryCard from "../components/CategoryCard";
 import dancerImg from "../assets/artists/dancer1.jpg";
@@ -52,6 +53,22 @@ function Home() {
             image="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80"
             category="Speaker"
           />
+        </div>
+      </section>
+
+      <section className="become-artist-cta">
+        <div className="cta-glow"></div>
+        <div className="cta-content">
+          <p className="cta-tag">JOIN THE STAGE</p>
+          <h2>Share Your Talent With the World</h2>
+          <p className="cta-description">
+            Whether you're a singer, DJ, dancer, or speaker — StageLink connects you 
+            with event organizers looking for exactly your kind of talent. Build your profile, 
+            showcase your work, and start getting booked.
+          </p>
+          <Link to="/become-artist" className="cta-btn">
+            Become an Artist <span className="cta-arrow">→</span>
+          </Link>
         </div>
       </section>
     </>
