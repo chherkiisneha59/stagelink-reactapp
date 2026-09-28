@@ -1,7 +1,21 @@
 import { useEffect, useRef } from "react";
 
 function Hero() {
+  const videoRef = useRef(null);
   const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.muted = true;
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((err) => {
+          console.log("Autoplay deferred:", err);
+        });
+      }
+    }
+  }, []);
 
   // Stage lights & party crowd particle animation canvas
   useEffect(() => {
@@ -92,6 +106,25 @@ function Hero() {
       <div className="hero-video-container">
         {/* Stage Lights Canvas */}
         <canvas ref={canvasRef} className="hero-canvas" />
+
+        {/* Storyblocks Concert Audience Strobe Lights Video Background */}
+        <video
+          ref={videoRef}
+          className="hero-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          webkit-playsinline="true"
+          preload="auto"
+        >
+          <source src="/hero-bg.mp4" type="video/mp4" />
+          <source
+            src="https://d2j2uxe7jasn0r.cloudfront.net/watermarks/video/5PNlDRM/694ec4305740640cc28d83e5-8nmluy1n49__faf173a3a6bf4447af16f53fa7347f57__P1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+
         <div className="hero-video-overlay" />
       </div>
 
