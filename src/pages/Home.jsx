@@ -21,6 +21,10 @@ function Home() {
           </span>
         </div>
 
+        <div className="book-artist-banner">
+          <p>Book Artists for Events According to Your Choice</p>
+        </div>
+
         <div className="categories-grid">
           <CategoryCard
             icon="🎤"

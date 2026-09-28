@@ -194,6 +194,23 @@ a {
   color: #aaaab5;
 }
 
+.book-artist-banner {
+  max-width: 800px;
+  margin: 0 auto 35px;
+  padding: 20px 30px;
+  border: 2px solid #b8a0ff;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.book-artist-banner p {
+  color: #d4c6ff;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
