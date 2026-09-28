@@ -118,7 +118,7 @@ function Hero() {
           webkit-playsinline="true"
           preload="auto"
         >
-          <source src="/hero-bg.mp4" type="video/mp4" />
+          <source src="/concert-bg.mp4" type="video/mp4" />
           <source
             src="https://d2j2uxe7jasn0r.cloudfront.net/watermarks/video/5PNlDRM/694ec4305740640cc28d83e5-8nmluy1n49__faf173a3a6bf4447af16f53fa7347f57__P1080.mp4"
             type="video/mp4"
@@ -147,4 +147,3 @@ function Hero() {
 }
 
 export default Hero;
-
