@@ -219,51 +219,6 @@ a {
   margin: 0 auto;
 }
 
-/* Let's Connect Section */
-.lets-connect-section {
-  padding: 80px 7%;
-  text-align: center;
-  background: #13131a;
-}
-
-.lets-connect-content {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.lets-connect-tag {
-  font-size: 13px;
-  letter-spacing: 3px;
-  color: #b8a0ff;
-  margin-bottom: 14px;
-  font-weight: 600;
-}
-
-.lets-connect-content h2 {
-  font-size: clamp(26px, 5vw, 40px);
-  margin-bottom: 22px;
-}
-
-.lets-connect-text {
-  color: #aaaab5;
-  font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-.lets-connect-btn {
-  display: inline-block;
-  padding: 14px 30px;
-  font-size: 15px;
-  transition: background 0.25s ease, color 0.25s ease;
-}
-
-.lets-connect-btn:hover {
-  background: #b8a0ff;
-  color: #111;
-  border-color: #b8a0ff;
-}
-
 .category-card {
   position: relative;
   border: 1px solid #292932;

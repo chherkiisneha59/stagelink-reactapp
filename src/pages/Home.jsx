@@ -60,24 +60,6 @@ function Home() {
         </div>
       </section>
 
-      <section className="lets-connect-section">
-        <div className="lets-connect-content">
-          <p className="lets-connect-tag">ABOUT US</p>
-          <h2>Let's Connect</h2>
-          <p className="lets-connect-text">
-            StageLink is your go-to platform for discovering and booking talented artists 
-            for any occasion. Whether it's a wedding, corporate event, private party, or a 
-            community gathering — we bring performers and organizers together seamlessly. 
-            Browse through verified profiles, watch showreels, compare pricing, and book 
-            your favourite artist in just a few clicks. At StageLink, every event deserves 
-            a stage-worthy performance.
-          </p>
-          <Link to="/contact" className="secondary-btn lets-connect-btn">
-            Get in Touch →
-          </Link>
-        </div>
-      </section>
-
       <section className="become-artist-cta">
         <div className="cta-glow"></div>
         <div className="cta-content">
