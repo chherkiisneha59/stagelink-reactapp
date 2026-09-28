@@ -1008,8 +1008,7 @@ a {
 @media (max-width: 768px) {
   .navbar {
     height: 60px;
-    padding: 0 12px;
-    gap: 8px;
+    padding: 0 20px;
   }
 
   .logo {
@@ -1019,7 +1018,7 @@ a {
 
   .nav-links {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none;
@@ -1031,8 +1030,8 @@ a {
   }
 
   .nav-links a {
-    font-size: 13px;
-    padding: 4px 6px;
+    font-size: 14px;
+    padding: 4px 0;
     white-space: nowrap;
   }
 
@@ -1122,8 +1121,7 @@ a {
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 0 10px;
-    gap: 6px;
+    padding: 0 15px;
   }
 
   .logo {
@@ -1131,12 +1129,12 @@ a {
   }
 
   .nav-links {
-    gap: 8px;
+    gap: 12px;
   }
 
   .nav-links a {
-    font-size: 12px;
-    padding: 2px 4px;
+    font-size: 13px;
+    padding: 4px 0;
   }
 
   .categories-grid {
