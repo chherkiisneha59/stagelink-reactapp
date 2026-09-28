@@ -1,21 +1,7 @@
 import { useEffect, useRef } from "react";
 
 function Hero() {
-  const videoRef = useRef(null);
   const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      video.muted = true;
-      const playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise.catch((err) => {
-          console.log("Autoplay deferred:", err);
-        });
-      }
-    }
-  }, []);
 
   // Stage lights & party crowd particle animation canvas
   useEffect(() => {
@@ -106,30 +92,6 @@ function Hero() {
       <div className="hero-video-container">
         {/* Stage Lights Canvas */}
         <canvas ref={canvasRef} className="hero-canvas" />
-
-        {/* Dynamic Event Dancing People Background Video */}
-        <video
-          ref={videoRef}
-          className="hero-video"
-          autoPlay
-          loop
-          muted
-          playsInline
-          webkit-playsinline="true"
-          preload="auto"
-          poster="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1920&q=80"
-        >
-          <source src="/hero-bg.mp4" type="video/mp4" />
-          <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-crowd-of-people-dancing-at-a-concert-4331-large.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-people-dancing-at-a-party-or-concert-4330-large.mp4"
-            type="video/mp4"
-          />
-        </video>
-
         <div className="hero-video-overlay" />
       </div>
 
