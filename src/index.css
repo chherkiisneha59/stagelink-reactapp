@@ -626,7 +626,7 @@ a {
   padding: 90px 7%;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(180deg, #0f0f14 0%, #17141f 50%, #0f0f14 100%);
+  background: linear-gradient(135deg, #b8a0ff 0%, #9b7aff 50%, #7c5ce0 100%);
 }
 
 .cta-glow {
@@ -636,7 +636,7 @@ a {
   transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(184, 160, 255, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
   pointer-events: none;
   animation: ctaPulse 4s ease-in-out infinite;
 }
@@ -656,7 +656,7 @@ a {
 .cta-tag {
   font-size: 13px;
   letter-spacing: 3px;
-  color: #b8a0ff;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 16px;
   font-weight: 600;
 }
@@ -665,14 +665,15 @@ a {
   font-size: clamp(26px, 5vw, 42px);
   line-height: 1.2;
   margin-bottom: 18px;
-  background: linear-gradient(135deg, #ffffff 30%, #b8a0ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
 }
 
 .cta-description {
-  color: #aaaab5;
+  color: rgba(255, 255, 255, 0.85);
   font-size: 16px;
   line-height: 1.7;
   margin-bottom: 35px;
@@ -684,17 +685,17 @@ a {
   gap: 10px;
   padding: 16px 36px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #b8a0ff, #8b6fff);
-  color: #111;
+  background: #ffffff;
+  color: #6b4ecf;
   font-size: 16px;
   font-weight: 700;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 4px 25px rgba(184, 160, 255, 0.25);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
 }
 
 .cta-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 35px rgba(184, 160, 255, 0.4);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.25);
 }
 
 .cta-arrow {
