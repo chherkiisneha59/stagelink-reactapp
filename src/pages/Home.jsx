@@ -10,6 +10,10 @@ function Home() {
     <>
       <Hero />
 
+      <div className="book-artist-banner">
+        <p>Book Artists for Events According to Your Choice</p>
+      </div>
+
       <section className="categories-section">
         <div className="section-heading">
           <p>EXPLORE</p>
@@ -19,10 +23,6 @@ function Home() {
           <span>
             Discover the perfect talent for your next event.
           </span>
-        </div>
-
-        <div className="book-artist-banner">
-          <p>Book Artists for Events According to Your Choice</p>
         </div>
 
         <div className="categories-grid">

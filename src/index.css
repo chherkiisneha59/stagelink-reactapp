@@ -195,12 +195,12 @@ a {
 }
 
 .book-artist-banner {
-  max-width: 800px;
-  margin: 0 auto 35px;
-  padding: 20px 30px;
-  border: 2px solid #b8a0ff;
-  border-radius: 12px;
+  width: 100%;
+  padding: 18px 20px;
+  border-top: 2px solid #b8a0ff;
+  border-bottom: 2px solid #b8a0ff;
   text-align: center;
+  background: rgba(184, 160, 255, 0.06);
 }
 
 .book-artist-banner p {
