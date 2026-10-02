@@ -1187,6 +1187,11 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .book-artist-banner p {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
   }
