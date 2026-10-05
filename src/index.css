@@ -184,28 +184,29 @@ a {
 
 /* Categories Section */
 .categories-section {
-  padding: 80px 7%;
+  padding: 60px 7%;
 }
 
 .section-heading {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .section-heading p {
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 3px;
   color: #a5a5b2;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .section-heading h2 {
-  font-size: clamp(24px, 4.5vw, 38px);
-  margin-bottom: 12px;
+  font-size: clamp(20px, 4vw, 32px);
+  margin-bottom: 10px;
 }
 
 .section-heading span {
   color: #aaaab5;
+  font-size: 15px;
 }
 
 .book-artist-banner {
@@ -245,9 +246,9 @@ a {
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 800px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
