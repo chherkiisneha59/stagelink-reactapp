@@ -211,8 +211,9 @@ a {
 .book-artist-banner {
   width: 100%;
   padding: 18px 20px;
-  text-align: center;
   background: #b8a0ff;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .book-artist-banner p {
@@ -221,6 +222,17 @@ a {
   font-weight: 600;
   letter-spacing: 0.5px;
   margin: 0;
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .categories-grid {
