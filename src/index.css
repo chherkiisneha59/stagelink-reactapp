@@ -210,28 +210,36 @@ a {
 
 .book-artist-banner {
   width: 100%;
-  padding: 18px 20px;
+  padding: 20px 0;
   background: #b8a0ff;
   overflow: hidden;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
-.book-artist-banner p {
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-content span {
   color: #ffffff;
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 700;
+  letter-spacing: 1px;
   margin: 0;
-  display: inline-block;
-  animation: marquee 15s linear infinite;
+  padding: 0 40px;
+  text-transform: uppercase;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 

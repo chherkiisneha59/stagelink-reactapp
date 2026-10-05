@@ -11,7 +11,12 @@ function Home() {
       <Hero />
 
       <div className="book-artist-banner">
-        <p>Book Artists for Events According to Your Choice</p>
+        <div className="marquee-content">
+          <span>Book Artists for Events According to Your Choice</span>
+          <span>Book Artists for Events According to Your Choice</span>
+          <span>Book Artists for Events According to Your Choice</span>
+          <span>Book Artists for Events According to Your Choice</span>
+        </div>
       </div>
 
       <section className="categories-section">
