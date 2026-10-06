@@ -1091,10 +1091,6 @@ a {
 
 /* Media Queries */
 @media (max-width: 1024px) {
-  .categories-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .artists-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1154,7 +1150,6 @@ a {
 
 
   .categories-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
     gap: 12px;
   }
 
@@ -1255,7 +1250,6 @@ a {
   }
 
   .categories-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px;
   }
 
