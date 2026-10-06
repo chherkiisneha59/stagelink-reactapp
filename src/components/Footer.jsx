@@ -13,12 +13,7 @@ function Footer() {
         </div>
 
         <div className="footer-links-group">
-          <div className="footer-links">
-            <h4>Explore</h4>
-            <Link to="/explore">Find Artists</Link>
-            <Link to="/become-artist">Join as Artist</Link>
-            <Link to="/booking">Book Now</Link>
-          </div>
+
           <div className="footer-links">
             <h4>Company</h4>
             <Link to="/">About Us</Link>
