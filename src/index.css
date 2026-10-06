@@ -1265,6 +1265,26 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .footer-logo {
+    font-size: 20px;
+  }
+
+  .footer-brand p {
+    font-size: 11px;
+  }
+
+  .footer-links h4 {
+    font-size: 13px;
+  }
+
+  .footer-links a {
+    font-size: 11px;
+  }
+
+  .footer-bottom p, .footer-socials a {
+    font-size: 10px;
+  }
+
   .filter-bar {
     flex-direction: column;
   }
