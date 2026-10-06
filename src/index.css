@@ -352,7 +352,7 @@ a {
 
 .artists-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
 
@@ -1265,7 +1265,55 @@ a {
   }
 
   .artists-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .artist-image {
+    height: 120px;
+  }
+  
+  .artist-info {
+    padding: 12px;
+  }
+  
+  .artist-info h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .artist-category {
+    font-size: 10px;
+  }
+
+  .artist-location {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .artist-details {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .artist-bottom {
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .artist-bottom strong {
+    font-size: 14px;
+  }
+  
+  .view-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
   }
 
   .book-artist-banner p {
