@@ -973,8 +973,8 @@ a {
   position: relative;
   background: #0a0a0e;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 60px 5% 30px;
-  margin-top: 50px;
+  padding: 30px 5% 15px;
+  margin-top: 30px;
   overflow: hidden;
 }
 
@@ -993,9 +993,9 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
   max-width: 1200px;
-  margin: 0 auto 50px;
+  margin: 0 auto 25px;
 }
 
 .footer-brand {
@@ -1024,7 +1024,7 @@ a {
 
 .footer-links-group {
   display: flex;
-  gap: 80px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -1059,7 +1059,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   flex-wrap: wrap;
   gap: 20px;
