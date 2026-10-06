@@ -977,9 +977,9 @@ a {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
   max-width: 1200px;
   margin: 0 auto 25px;
 }
