@@ -978,7 +978,7 @@ a {
 .footer-container {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto 25px;
@@ -1167,14 +1167,7 @@ a {
     padding: 22px 16px;
   }
 
-  .footer-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
 
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1261,8 +1254,10 @@ a {
     white-space: nowrap;
   }
 
-  .footer-content {
-    grid-template-columns: 1fr;
+
+
+  .footer-container {
+    gap: 20px;
   }
 
   .footer-logo {
