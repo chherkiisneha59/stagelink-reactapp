@@ -31,7 +31,7 @@ a {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   color: white;
   letter-spacing: -0.5px;
@@ -46,7 +46,7 @@ a {
 
 .nav-links a {
   color: #c7c7ce;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   white-space: nowrap;
   transition: color 0.2s ease;
