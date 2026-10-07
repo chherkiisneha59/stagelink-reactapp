@@ -764,7 +764,7 @@ a {
 }
 
 .cta-content h2 {
-  font-size: clamp(20px, 6vw, 42px);
+  font-size: clamp(18px, 4vw, 32px);
   line-height: 1.2;
   margin-bottom: 18px;
   color: #ffffff;
