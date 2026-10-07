@@ -4,6 +4,7 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    inquiryType: "general",
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
@@ -29,7 +30,7 @@ function Contact() {
               className="primary-btn"
               onClick={() => {
                 setSubmitted(false);
-                setFormData({ name: "", email: "", message: "" });
+                setFormData({ name: "", email: "", inquiryType: "general", message: "" });
               }}
             >
               Send Another Message
@@ -74,6 +75,22 @@ function Contact() {
               onChange={handleChange}
               required
             />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="inquiryType">Inquiry Type</label>
+            <select
+              id="inquiryType"
+              name="inquiryType"
+              value={formData.inquiryType}
+              onChange={handleChange}
+              required
+            >
+              <option value="general">General Inquiry</option>
+              <option value="booking">Artist Booking</option>
+              <option value="support">Support</option>
+              <option value="feedback">Feedback</option>
+            </select>
           </div>
 
           <div className="form-group">
